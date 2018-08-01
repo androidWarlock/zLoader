@@ -13,7 +13,7 @@ import com.ahmedmabrook.zloader.R
 import com.ahmedmabrook.zloader.home.view.listeners.OnLoadMoreListener
 import com.ahmedmabrook.zloader.home.view.listeners.OnMainAdapterClickListener
 import com.ahmedmabrook.zloader.model.ItemList
-import com.ahmedmabrook.zloaderlibrary.gadgets.RequestImageView
+import com.ahmedmabrook.zloaderlibrary.gadgets.ZimageView
 import com.ahmedmabrook.zloaderlibrary.request.image.listeners.OnCompleteImageListener
 
 /**
@@ -121,12 +121,12 @@ internal class HomeAdapter(private val context: Context, private var items: Muta
     }
 
     private inner class ItemViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        internal var userImageView: RequestImageView
+        internal var userImageView: ZimageView
         internal var userNameTextView: TextView
 
         init {
 
-            userImageView = itemView.findViewById(R.id.user_image_iv) as RequestImageView
+            userImageView = itemView.findViewById(R.id.user_image_iv) as ZimageView
             userNameTextView = itemView.findViewById(R.id.user_name_tv) as TextView
 
             itemView.setOnClickListener {

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/padding_6dp"
-    app:cardCornerRadius="2dp"
+    app:cardCornerRadius="8dp"
     app:cardPreventCornerOverlap="false"
     app:contentPaddingLeft="-3dp"
     app:contentPaddingRight="-3dp"
@@ -14,10 +14,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@android:color/darker_gray"
         android:orientation="vertical">
 
-        <com.ahmedmabrook.zloaderlibrary.gadgets.RequestImageView
+        <com.ahmedmabrook.zloaderlibrary.gadgets.ZimageView
             android:id="@+id/user_image_iv"
             android:layout_width="match_parent"
             android:layout_height="200dp"

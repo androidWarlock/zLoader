@@ -16,24 +16,24 @@ import java.util.concurrent.Executors;
  *
  */
 
-public class RequestImageView extends AppCompatImageView {
+public class ZimageView extends AppCompatImageView {
     private static final int LOADING_THREADS = 5;
     private static ExecutorService threadPool = Executors.newFixedThreadPool(LOADING_THREADS);
     private ImageTask currentTask;
     private ImageCache imageCache;
 
 
-    public RequestImageView(Context context) {
+    public ZimageView(Context context) {
         super(context);
         imageCache = ImageCache.getInstance();
     }
 
-    public RequestImageView(Context context, AttributeSet attrs) {
+    public ZimageView(Context context, AttributeSet attrs) {
         super(context, attrs);
         imageCache = ImageCache.getInstance();
     }
 
-    public RequestImageView(Context context, AttributeSet attrs, int defStyle) {
+    public ZimageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         imageCache = ImageCache.getInstance();
     }
