@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">zLoader</string>
+    <string name="generic_error_message">something went wrong</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="user_image">User Image</string>
+
+
+</resources>
